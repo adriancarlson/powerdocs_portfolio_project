@@ -1,0 +1,38 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$pd-primary: #00427c;
+$pd-secondary: #0075db;
+$pd-grey: #dee2e6;
+
+
+$theme-colors: (
+    "primary":$pd-primary
+);
+
+
+
+.pd-font {
+	font-family: 'Karla', sans-serif;
+}
+.pd-navbar {
+	padding: 5px 0;
+	background: linear-gradient(to right, $pd-secondary, $pd-primary);
+}
+
+.pd-section {
+	margin-top: 1.8rem;
+	border-bottom: 1px solid $pd-grey;
+	padding-bottom: 1rem;
+}
+
+.pd-section {
+    h2 ,h3 ,h4, h5, h6 {
+        padding-bottom: 1.5rem;
+    }
+}
+
+.pd-section:last-of-type {
+	padding-bottom: 3rem;
+	border-bottom: 0;
+}
+
