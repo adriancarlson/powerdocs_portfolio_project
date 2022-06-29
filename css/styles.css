@@ -8343,17 +8343,24 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.ps-active {
+  background: #cfe2ff;
+  color: black;
+  font-weight: 500; }
+
 .pd-font {
   font-family: 'Karla', sans-serif; }
 
 .pd-navbar {
   padding: 5px 0;
-  background: linear-gradient(to right, #0075db, #00427c); }
+  background: linear-gradient(to right, #0075db, #00427C); }
 
 .pd-section {
   margin-top: 1.8rem;
-  border-bottom: 1px solid #dee2e6;
-  padding-bottom: 1rem; }
+  margin-left: .5rem;
+  border-bottom: 1px solid #F4F4F4;
+  padding-bottom: 1rem;
+  scroll-margin-top: 7rem; }
 
 .pd-section h2, .pd-section .h2, .pd-section h3, .pd-section .h3, .pd-section h4, .pd-section .h4, .pd-section h5, .pd-section .h5, .pd-section h6, .pd-section .h6 {
   padding-bottom: 1.5rem; }
@@ -8361,3 +8368,13 @@ textarea.form-control-lg {
 .pd-section:last-of-type {
   padding-bottom: 3rem;
   border-bottom: 0; }
+
+.sticky-offset-breadcrumbs {
+  top: 61px;
+  background: #fff !important; }
+
+.sticky-offset-leftnav {
+  top: 61px; }
+
+.sticky-offset-sidebar {
+  top: 85px; }

@@ -32,7 +32,7 @@
         <div id="pd-main" class="container-fluid">
             <div class="row g-0">
                 <div id="pd-left-nav" class="col-lg-2 d-none d-lg-block border-end">
-                    <div class="accordion accordion-flush" id="accordion-left-nav">
+                    <div class="accordion accordion-flush sticky-top sticky-offset-leftnav" id="accordion-left-nav">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="accordion-left-nav-headingOne">
                                 <button class="accordion-button collapsed fw-semibold" type="button"
@@ -43,9 +43,9 @@
                             </h2>
                             <div id="accordion-left-nav-collapseOne" class="accordion-collapse collapse show"
                                 aria-labelledby="accordion-left-nav-headingOne" data-bs-parent="#accordion-left-nav">
-                                <div class="list-group list-group-flush small ">
+                                <div class="list-group list-group-flush small">
                                     <a href="#"
-                                        class="list-group-item list-group-item-action list-group-item-light ps-4 rounded-2 border-bottom-0">
+                                        class="list-group-item list-group-item-action list-group-item-light ps-4 rounded-2 border-bottom-0 ps-active">
                                         Common Start Page Searches</a>
                                     <a href="#"
                                         class="list-group-item list-group-item-action list-group-item-light ps-4 rounded-2 border-bottom-0">
@@ -217,7 +217,8 @@
                 </div>
                 <div id="pd-content-area" class="col-lg-8">
                     <div class="container-fluid">
-                        <div class="row border-bottom mt-2">
+                        <div class="row border-bottom mt-2 sticky-top sticky-offset-breadcrumbs"
+                            >
                             <div class="col-auto me-auto">
                                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                                     <ol class="breadcrumb">
@@ -238,9 +239,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="pd-section">
-                                <h1 class=" mb-4">Common Start Page Searches</h1>
-                                <button type="button" class="btn btn-primary">Primary</button>
+                            <div id="pd-section-0" class="pd-section">
+                                <h1 class="mb-4">Common Start Page Searches</h1>
                                 <p>Search for student records using fields, comparator symbols, and text to locate the
                                     student or students based on matching attributes.</p>
                                 <p>When you create a search command, it consists of three parts:</p>
@@ -268,20 +268,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pd-section">
+                            <div id="pd-section-1" class="pd-section">
                                 <h3>Compound Searches</h3>
                                 <p>Use a compound search to combine two or more searches into one and perform multiple
                                     searches simultaneously. Separate the search commands with a <strong>semicolon
                                         (;) </strong>, which means “and.”</p>
                                 <p>For Example: <strong> first_name= Adrian;grade_level=9</strong></p>
                             </div>
-                            <div class="pd-section">
+                            <div id="pd-section-2" class="pd-section">
                                 <h3>Searching for Inactive Students</h3>
                                 <p>You can also use a <strong> forward slash (/) </strong> to search for inactive,
                                     graduated, pre-registered, & transferred-out students.</p>
                                 <p>For Example: <strong> /enroll_status=1</strong> for inactive students</p>
                             </div>
-                            <div class="pd-section">
+                            <div id="pd-section-3" class="pd-section">
                                 <h3>Searching for Active and Pre-registered Students</h3>
                                 <p>You can also use a combination of the forward slash and compound search to search for
                                     active & pre-registered students.</p>
@@ -289,7 +289,7 @@
                                     pre-registered students</p>
                                 <p>or: <strong> /enroll_status in -1,0</strong></p>
                             </div>
-                            <div class="pd-section">
+                            <div id="pd-section-4" class="pd-section">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="">
@@ -413,12 +413,32 @@
                     </div>
                 </div>
                 <div id="pd-side-bar" class="col-lg-2 d-none d-lg-block border-start">
-                    Article nav
+                    <div class="container-fluid sticky-top sticky-offset-sidebar">
+                        <div class="row mt-4 ms-2 me-2">
+                            <h6 class="border-bottom mb-0 pb-1">On this Page</h6>
+                            <div class="list-group list-group-flush small">
+                                <a href="#pd-section-0"
+                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
+                                    Common Start Page Searches</a>
+                                <a href="#pd-section-1"
+                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
+                                    Compound Searches</a>
+                                <a href="#pd-section-2"
+                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
+                                    Searching for Inactive Students</a>
+                                <a href="#pd-section-3"
+                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
+                                    Searching for Active and Pre-registered Students</a>
+                                <a href="#pd-section-4"
+                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
+                                    Search Commands</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </body>
 
 </html>
