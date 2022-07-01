@@ -17,15 +17,17 @@
     </head>
 
     <body>
-        <nav class="navbar sticky-top navbar-dark bg-primary pd-navbar">
+        <nav id="pd-top-nav" class="navbar sticky-top navbar-dark bg-primary pd-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand ms-2" href="#">
                     <img src="img/powerschool-white.svg" alt="PowerSchool Logo" width="30" height="40"
                         class="d-inline-block align-text-center"><span class="ps-2 fs-4 fw-semibold pd-font">PowerDocs
                     </span></a>
                 <div class="d-flex btn-group me-2">
-                    <button class="btn btn-outline-light btn-lg"><i class="bi bi-filetype-pdf"></i></button>
-                    <button class="btn btn-outline-light btn-lg"><i class="bi bi-printer-fill"></i></button>
+                    <button id="pd-pdf-btn" class="btn btn-outline-light btn-lg"><i
+                            class="bi bi-filetype-pdf"></i></button>
+                    <button id="pd-prnt-btn" class="btn btn-outline-light btn-lg"><i
+                            class="bi bi-printer-fill"></i></button>
                 </div>
             </div>
         </nav>
@@ -217,9 +219,9 @@
                 </div>
                 <div id="pd-content-area" class="col-lg-8">
                     <div class="container-fluid">
-                        <div class="row border-bottom mt-2 sticky-top sticky-offset-breadcrumbs"
-                            >
-                            <div class="col-auto me-auto">
+                        <div id="pd-breadcrumbs-container"
+                            class="row border-bottom mt-2 sticky-top sticky-offset-breadcrumbs">
+                            <div id="pd-breadcrumbs" class="col-auto me-auto">
                                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Start
@@ -289,11 +291,11 @@
                                     pre-registered students</p>
                                 <p>or: <strong> /enroll_status in -1,0</strong></p>
                             </div>
-                            <div id="pd-section-4" class="pd-section">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="">
-                                            <table class="table table-light table-striped">
+                            <div id="pd-section-4" class="pd-section prnt-remove-float">
+                                <div class="container-fluid prnt-remove-float">
+                                    <div class="row prnt-remove-float">
+                                        <div class="prnt-remove-float">
+                                            <table class="table table-light table-striped page-break-before">
                                                 <thead>
                                                     <tr class="table-primary">
                                                         <th scope="col">Search Command</th>
@@ -437,8 +439,12 @@
                     </div>
                 </div>
             </div>
-
             <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+            <!-- <script src="node_modules/html2pdf.js/dist/html2pdf.js"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+                integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="js/scripts.js"></script>
     </body>
 
 </html>

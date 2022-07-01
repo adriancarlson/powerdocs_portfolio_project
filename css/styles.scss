@@ -64,3 +64,55 @@ $theme-colors: (
 .sticky-offset-sidebar {
     top: 85px;
 }
+
+@media print {
+    
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2,h3,h4,h5,h6 {
+        font-size: 1rem;
+    }
+    #pd-content-area{
+        width:100%;
+        margin-left: 0;
+        padding-top:0;
+        font-size: .7rem;
+    }
+    
+    #pd-top-nav, #pd-breadcrumbs-container {
+        display: none;
+    }
+
+    .page-break-before{
+        page-break-before: always;
+        page-break-inside: avoid;
+    }
+}
+// duplicated print styles for print pdf. will add this class once PDF button is clicked and then remove it when done. 
+.printable{
+    .pd-section{
+        width:100%;
+        margin-left: 0;
+        padding-top:0;
+        font-size: .7rem;
+
+        h1{
+            font-size: 1.5rem;
+        }
+    
+        h2,h3,h4,h5,h6 {
+            font-size: 1rem;
+        }
+    }
+    
+    #pd-top-nav, #pd-breadcrumbs-container {
+        display: none;
+    }
+
+    .page-break-before{
+        page-break-before: always;
+        page-break-inside: avoid;
+    }
+}

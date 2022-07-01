@@ -8378,3 +8378,36 @@ textarea.form-control-lg {
 
 .sticky-offset-sidebar {
   top: 85px; }
+
+@media print {
+  h1, .h1 {
+    font-size: 1.5rem; }
+  h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-size: 1rem; }
+  #pd-content-area {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0;
+    font-size: .7rem; }
+  #pd-top-nav, #pd-breadcrumbs-container {
+    display: none; }
+  .page-break-before {
+    page-break-before: always;
+    page-break-inside: avoid; } }
+
+.printable .pd-section {
+  width: 100%;
+  margin-left: 0;
+  padding-top: 0;
+  font-size: .7rem; }
+  .printable .pd-section h1, .printable .pd-section .h1 {
+    font-size: 1.5rem; }
+  .printable .pd-section h2, .printable .pd-section .h2, .printable .pd-section h3, .printable .pd-section .h3, .printable .pd-section h4, .printable .pd-section .h4, .printable .pd-section h5, .printable .pd-section .h5, .printable .pd-section h6, .printable .pd-section .h6 {
+    font-size: 1rem; }
+
+.printable #pd-top-nav, .printable #pd-breadcrumbs-container {
+  display: none; }
+
+.printable .page-break-before {
+  page-break-before: always;
+  page-break-inside: avoid; }
