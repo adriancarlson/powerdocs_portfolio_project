@@ -19,7 +19,7 @@
     <body>
         <nav id="pd-top-nav" class="navbar sticky-top navbar-dark bg-primary pd-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand ms-2" href="#">
+                <a class="navbar-brand ms-2" href="index.html">
                     <img src="img/powerschool-white.svg" alt="PowerSchool Logo" width="30" height="40"
                         class="d-inline-block align-text-center"><span class="ps-2 fs-4 fw-semibold pd-font">PowerDocs
                     </span></a>
@@ -43,11 +43,11 @@
                                     Every Day
                                 </button>
                             </h2>
-                            <div id="accordion-left-nav-collapseOne" class="accordion-collapse collapse show"
+                            <div id="accordion-left-nav-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="accordion-left-nav-headingOne" data-bs-parent="#accordion-left-nav">
                                 <div class="list-group list-group-flush small">
-                                    <a href="#"
-                                        class="list-group-item list-group-item-action list-group-item-light ps-4 rounded-2 border-bottom-0 ps-active">
+                                    <a href="every_day_common_start_page_searches.html"
+                                        class="list-group-item list-group-item-action list-group-item-light ps-4 rounded-2 border-bottom-0">
                                         Common Start Page Searches</a>
                                     <a href="#"
                                         class="list-group-item list-group-item-action list-group-item-light ps-4 rounded-2 border-bottom-0">
@@ -229,187 +229,18 @@
                                         <li class="breadcrumb-item"><a class="text-decoration-none" href="#">PowerSchool
                                                 Tips</a>
                                         </li>
-                                        <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Every
-                                                Day</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Common Start Page
-                                            Searches</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Welcome</li>
                                     </ol>
                                 </nav>
                             </div>
                             <div class="col-auto">
-                                <p class="fst-italic text-muted text-end">Last Updated: 6/22/22</p>
+                                <p class="fst-italic text-muted text-end">Last Updated: 7/2/22</p>
                             </div>
                         </div>
                         <div class="row">
                             <div id="pd-section-0" class="pd-section">
-                                <h1 class="mb-4">Common Start Page Searches</h1>
-                                <p>Search for student records using fields, comparator symbols, and text to locate the
-                                    student or students based on matching attributes.</p>
-                                <p>When you create a search command, it consists of three parts:</p>
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <table class="table table-primary text-center">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">[Field name]</th>
-                                                        <th scope="col">[Comparator]</th>
-                                                        <th scope="col">[What you are looking for]</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="table-light">
-                                                        <td>first_name</td>
-                                                        <td>=</td>
-                                                        <td>Adrian</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="col"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="pd-section-1" class="pd-section">
-                                <h3>Compound Searches</h3>
-                                <p>Use a compound search to combine two or more searches into one and perform multiple
-                                    searches simultaneously. Separate the search commands with a <strong>semicolon
-                                        (;) </strong>, which means “and.”</p>
-                                <p>For Example: <strong> first_name= Adrian;grade_level=9</strong></p>
-                            </div>
-                            <div id="pd-section-2" class="pd-section">
-                                <h3>Searching for Inactive Students</h3>
-                                <p>You can also use a <strong> forward slash (/) </strong> to search for inactive,
-                                    graduated, pre-registered, & transferred-out students.</p>
-                                <p>For Example: <strong> /enroll_status=1</strong> for inactive students</p>
-                            </div>
-                            <div id="pd-section-3" class="pd-section">
-                                <h3>Searching for Active and Pre-registered Students</h3>
-                                <p>You can also use a combination of the forward slash and compound search to search for
-                                    active & pre-registered students.</p>
-                                <p>For Example: <strong> /enroll_status=0;enroll_status=-1</strong> for active &
-                                    pre-registered students</p>
-                                <p>or: <strong> /enroll_status in -1,0</strong></p>
-                            </div>
-                            <div id="pd-section-4" class="pd-section prnt-remove-float">
-                                <div class="container-fluid prnt-remove-float">
-                                    <div class="row prnt-remove-float">
-                                        <div class="prnt-remove-float">
-                                            <table class="table table-light table-striped page-break-before">
-                                                <thead>
-                                                    <tr class="table-primary">
-                                                        <th scope="col">Search Command</th>
-                                                        <th scope="col">Description</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>/enroll_status=0;enroll_status=-1 <br>/enroll_status in -1,0
-                                                        </th>
-                                                        <td>For active &
-                                                            pre-registered students</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>/enroll_status=-1</th>
-                                                        <td>For preregistered students</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>/enroll_status=1</th>
-                                                        <td>For inactive students only</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>/enroll_status=2</th>
-                                                        <td>For transferred-out students</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>/enroll_status=3</th>
-                                                        <td>For graduated students</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>enroll_status=0</th>
-                                                        <td>For active students only</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>/enroll_status#0</th>
-                                                        <td>For any student who isn’t active</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*birthday=today </th>
-                                                        <td>Finds all students whose birthday is today, matching only
-                                                            month
-                                                            and day</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*birthday=5/1</th>
-                                                        <td>Find all students whose birthday is May 1</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*birthday>=5/1/10;*birthday<=5 /31/10 </td>
-                                                        <td>Find all birthdays in May of 2010</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*as_of=2/1/2013 </th>
-                                                        <td>All students in the school that were active as of 2/1/2013
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*not_enrolled_in_period=1 </th>
-                                                        <td>All students not enrolled in period 1</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*enrolled_in=541001</th>
-                                                        <td>Students in course number 541001</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*enrolled_in=541001.1</th>
-                                                        <td>Students in course 541001 section 1</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*not_enrolled_in=541001 </th>
-                                                        <td>Students not enrolled in course number 541001</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*has_completed_course=541001 </th>
-                                                        <td>Students who have at least one entry of course 541001 on the
-                                                            historical grades screen
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*has_not_completed=541001</th>
-                                                        <td>Students who do not have any entries of course 541001 on the
-                                                            historical grades screen
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*cumulative_credit_hours&#60;15 </th>
-                                                        <td>Students with less than 15 credit hours on their historical
-                                                            grades screen</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>*hours_requested&#60;10 </th>
-                                                        <td>Students who have requested more than 10 credit hours/td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Alert_Other# </th>
-                                                        <td>Students who have other alerts </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Alert_Medical# </th>
-                                                        <td>Students who have medical alerts </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Alert_guardian# </th>
-                                                        <td>Students who have guardian alerts </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Alert_Discipline# </th>
-                                                        <td>Students who have discipline alerts </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h1 class="mb-4">Welcome</h1>
+                                <p>Welcome to PowerDocs. Please click a guide in the Left side bar</p>
                             </div>
                         </div>
                     </div>
@@ -421,19 +252,7 @@
                             <div class="list-group list-group-flush small">
                                 <a href="#pd-section-0"
                                     class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
-                                    Common Start Page Searches</a>
-                                <a href="#pd-section-1"
-                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
-                                    Compound Searches</a>
-                                <a href="#pd-section-2"
-                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
-                                    Searching for Inactive Students</a>
-                                <a href="#pd-section-3"
-                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
-                                    Searching for Active and Pre-registered Students</a>
-                                <a href="#pd-section-4"
-                                    class="list-group-item list-group-item-action list-group-item-light rounded-2 border-bottom-0">
-                                    Search Commands</a>
+                                    Welcome</a>
                             </div>
                         </div>
                     </div>

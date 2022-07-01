@@ -19,7 +19,6 @@ pdfBtn.addEventListener('click', function () {
 		.set(opt)
 		.from(printableContent)
 		.save()
-		.outputPdf()
 		.then(function (pdf) {
 			printableContent.classList.remove('printable');
 		});
